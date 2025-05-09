@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .calculator {
+    background: #e0e5ec;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    width: 400px;
+    box-sizing: border-box;
+  }
+  
+  #display {
+    width: 100%;
+    height: 70px;
+    font-size: 2.5rem;
+    padding: 15px;
+    text-align: right;
+    border: none;
+    border-radius: 12px;
+    background: #f5f7fa;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .btn {
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    background: #f5f7fa;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .btn:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -3px -3px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .operator {
+    background: #d9d9d9;
+    color: #1e3a8a;
+  }
+  
+  .operator:hover {
+    background: #b4b4b4;
+  }
+  
+  .equal {
+    background: #4fd1c5;
+    color: white;
+    grid-column: span 4;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .equal:hover {
+    background: #38b2ac;
+  }
+  
+  #clear {
+    background: #fbd5d5;
+    color: #d62828;
+    font-weight: bold;
+  }
+  
+  #clear:hover {
+    background: #ffb3b3;
+  }
+  
+  #backspace {
+    background: #f7e3b5;
+    color: #d18500;
+    font-weight: bold;
+    grid-column: span 1;
+  }
+  
+  #backspace:hover {
+    background: #f7d18f;
+  }
+  
+  #percent {
+    background: #e7f1fe;
+    color: #1e3a8a;
+  }
+  
+  #percent:hover {
+    background: #cfe6fc;
+  }
+  
+  .buttons .btn[data-value="0"],
+  .buttons .btn[data-value="."] {
+    background: #f5f7fa;
+  }
+  
+  .buttons .btn[data-value="0"]:hover,
+  .buttons .btn[data-value="."]:hover {
+    background: #e5eff7;
+  }
+  .equal-btn {
+    grid-column: span 2;
+    background: #4fd1c5;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .equal-btn:hover {
+    background: #38b2ac;
+  }
+  
